@@ -37,7 +37,7 @@ public class BigBoard extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Parse.initialize(this, "VOLtsAtw9f2AxM31nVkGfzUg83LwVIJse6wtjnXz", "X4b9xT5YHtgzdGVV4eSPZk3EKevcik4eRRwswV7D");
+        Parse.initialize(this, "app-id", "client-key");
         setContentView(R.layout.activity_big_board);
         initializeData();
         adapter = new RVAdapter(persons);
@@ -79,9 +79,7 @@ public class BigBoard extends ActionBarActivity {
                 }
             }
         });
-        //persons.add(new Person("Emma Wilson", "23 years old"));
-        //persons.add(new Person("Lavery Maiss", "25 years old"));
-        //persons.add(new Person("Lillie Watts", "35 years old"));
+       
 
     }
 
@@ -90,16 +88,7 @@ public class BigBoard extends ActionBarActivity {
         rv.setAdapter(adapter);
     }
 
-    public void backOpt(View view)
-    {
-
-    }
-
-    public void boardHelp(View view)
-    {
-
-    }
-
+    
 
 
 
